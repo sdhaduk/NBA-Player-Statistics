@@ -1,6 +1,11 @@
-.title_div {
+.title-div {
     padding-top: 2%;
 }
+
 .title {
     text-align: center;
+}
+
+#form-div {
+    padding: 15%;
 }
