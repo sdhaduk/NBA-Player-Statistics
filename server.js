@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const sqlite3 = require("sqlite3").verbose();
-let sql;
 
 const app = express();
 
@@ -15,16 +14,25 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-    const db = new sqlite3.Database("./player_stats.db", sqlite3.OPEN_READWRITE, (err) => {
+    const db = new sqlite3.Database("./player_data.db", sqlite3.OPEN_READWRITE, (err) => {
         if (err) return console.error(err.message);
-    
         console.log("connection successfull");
     });
 
-    const playerName = req.body.playerName
-   
+    const playerStats = [];
 
-     
+    const playerName = req.body.playerName;
+    playerStats.push(playerName);
+    let sql;
+
+    sql = `SELECT field5 FROM player_data WHERE field4 = ?`;
+    
+    db.all(sql, [playerName], (err, rows) => {
+        if (err) return console.error(err.message);
+            rows.forEach(row => {
+                console.log(row);
+            });
+    });
 
 });
 
