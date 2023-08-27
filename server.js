@@ -15,15 +15,17 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-    const db = new sqlite3.Database("./new_stats.db", sqlite3.OPEN_READWRITE, (err) => {
+    const db = new sqlite3.Database("./player_stats.db", sqlite3.OPEN_READWRITE, (err) => {
         if (err) return console.error(err.message);
     
         console.log("connection successfull");
     });
 
     const playerName = req.body.playerName
+   
 
-    
+     
+
 });
 
 app.listen(3000, function() {
