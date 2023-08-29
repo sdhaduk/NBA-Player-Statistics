@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "NBA";
+    src: url(fonts/nba-lakers.ttf) format("truetype");
+    font-size: larger;
+}
+
+body {
+    background-image: -webkit-linear-gradient(left, #26d0ce, #1a2980);
+}
+
+.title-div {
+    color: white;
+    margin-top: 2%;
+    font-family: NBA;
+}
+
+.title {
+    font-size: 80px;
+    text-align: center;
+}
+
+.year {
+    font-size: 50px;
+    text-align: center;
+}
+
+.button-div {
+    padding-top: 2%;
+}
+
+.container {
+    color: white;
+    margin-top: 4%;
+}
+
+.form-label {
+    font-size: 30px;
+}
+
+button  {
+    font-family: inherit;
+}
