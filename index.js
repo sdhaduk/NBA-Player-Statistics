@@ -10,6 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 app.set("view engine", "ejs");
+const PORT = process.env.PORT || 3000;
 
 
 let playerName = "";
@@ -68,8 +69,6 @@ app.post("/", (req, res) => {
 
 });
 
-
-const PORT = process.env.PORT || 3000
 app.listen(PORT, function() {
     console.log("Server started on port 3000");
 }); 
