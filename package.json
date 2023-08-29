@@ -2,6 +2,7 @@
   "name": "bsktballstatspage",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +12,9 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "bootstrap": "^5.3.1",
+    "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "sqlite3": "^5.1.6"
+    "mysql2": "^3.6.0"
   }
 }
