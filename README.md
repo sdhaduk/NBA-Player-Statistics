@@ -1,9 +1,11 @@
 # NBA-Player-Statistics
 
+### Note
+* There is now a newer version of this project that I have created: [NBA_Player_Statistics_2](https://github.com/sdhaduk/NBA_Player_Statistics_2)
+
 ## Description
 * This is my full-stack project utlizing MySQL, Express, NodeJS, and EJS.
 * When a player name is inputted into the form, Node.js retrieves the data from the MySQL database and displays their stats on the EJS page using Express.
-* Hosted at: https://basketball-stats-9915e0415c28.herokuapp.com/
   
 ### Steps Taken: 
 1. I downloaded a CSV of NBA player statistics and cleaned that data using the Pandas library in python - this process is shown in my NBA-Player-Statistics-DataCleaning Repository
